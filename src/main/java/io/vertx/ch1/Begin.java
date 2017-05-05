@@ -63,6 +63,12 @@ public class Begin {
         if(vertxOptions!=null){
             return Vertx.vertx(vertxOptions);
         }
+        System.out.println(" b1 change");
+        System.out.println(" b1 change");
+        System.out.println(" b1 change");
+        System.out.println(" b1 change");
+        System.out.println(" b1 change");
+        
         return vertx;
 
     }
