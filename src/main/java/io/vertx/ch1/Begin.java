@@ -38,4 +38,13 @@ public class Begin {
 
     }
 
+    public static  Vertx getInstanceTest2(VertxOptions vertxOptions){
+
+        if(vertxOptions!=null){
+            return Vertx.vertx(vertxOptions);
+        }
+        return vertx;
+
+    }
+
 }
