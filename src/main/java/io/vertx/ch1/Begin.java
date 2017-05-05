@@ -32,6 +32,26 @@ public class Begin {
     public static  Vertx getInstance(VertxOptions vertxOptions){
 
         if(vertxOptions!=null){
+
+            System.out.println("TEst1");
+            return Vertx.vertx(vertxOptions);
+        }
+        return vertx;
+
+    }
+
+    public static  Vertx getInstance1(VertxOptions vertxOptions){
+
+        if(vertxOptions!=null){
+            return Vertx.vertx(vertxOptions);
+        }
+        return vertx;
+
+    }
+
+    public static  Vertx getInstance2(VertxOptions vertxOptions){
+
+        if(vertxOptions!=null){
             return Vertx.vertx(vertxOptions);
         }
         return vertx;
