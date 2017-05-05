@@ -1,6 +1,7 @@
 package io.vertx.ch1;
 
 import io.vertx.core.Vertx;
+import io.vertx.core.VertxOptions;
 import io.vertx.core.http.HttpServer;
 import io.vertx.core.http.HttpServerResponse;
 import io.vertx.ext.web.Route;
@@ -60,5 +61,14 @@ public class WebTest {
 
 
         server.requestHandler(router::accept).listen(8080);
+    }
+
+    public static  Vertx getInstanceTest2(VertxOptions vertxOptions){
+
+        if(vertxOptions!=null){
+            return Vertx.vertx(vertxOptions);
+        }
+        return null;
+
     }
 }
